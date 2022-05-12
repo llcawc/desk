@@ -1,0 +1,42 @@
+// custom.postcss
+
+
+:root {
+  --font-family-sans: pasInter, sans-serif;
+  --font-family-mono: pasJetBrainsMono, monospace;
+}
+
+body {
+  @apply text-zinc-500 bg-zinc-900;
+  font-family: var(--font-family-sans);
+}
+
+code {
+  @apply text-red-400 text-opacity-90;
+  font-family: var(--font-family-mono);
+}
+
+h1, h2, h3, p {
+  @apply mb-4;
+}
+h1 {
+  @apply text-white text-4xl font-semibold;
+}
+h2 {
+  @apply text-white text-2xl font-medium;
+}
+h3 {
+  @apply text-xl font-medium;
+}
+
+a {
+  @apply font-medium text-red-600 hover:text-red-800 transition-all focus-visible:outline-red-600 focus-visible:outline-dotted focus-visible:outline-4;
+}
+
+.under {
+  @apply text-white font-medium no-underline hover:text-white hover:underline hover:underline-offset-4 hover:decoration-4 decoration-red-500;
+}
+
+.bukva {
+  @apply indent-6 first-letter:font-bold first-letter:text-2xl first-letter:mr-[2px];
+}
