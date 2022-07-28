@@ -8,5 +8,5 @@ module.exports = (ctx) => ({
     autoprefixer: {},
     cssnano: ctx.env === 'production' ? { preset: ['default', { discardComments: { removeAll: true } }] } : false,
   },
-  parser: ctx.file.extname === '.scss' ? require('postcss-scss') : false,
+  parser: ctx.file.extname === '.postcss' ? require('postcss-scss') : false,
 })

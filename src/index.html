@@ -3,15 +3,24 @@
 
 <head>
   <meta charset="utf-8" />
+  <title>Desk • Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <meta property="og:image" content="assets/images/ice.jpg" />
+  <link rel="preload" as="style" href="assets/css/fonts.min.css" />
+  <link rel="stylesheet" href="assets/css/fonts.min.css" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="assets/css/main.min.css" />
-  <title>Desk • Home</title>
 </head>
 
 <body>
-  <div class="h-screen grid grid-rows-[16rem,auto,4rem] grid-cols-1">
+  <div class="loader absolute left-0 right-0 h-full w-full bg-transparent grid justify-center items-center m-0 p-0 transition-opacity duration-500">
+    <div class="text-center">
+      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      <div class="font-sans font-thin text-2xl tracking-wider mt-4 p-0">LOADING</div>
+    </div>
+  </div>
+
+  <div class="wrapper h-screen grid grid-rows-[16rem,auto,4rem] grid-cols-1 transition-opacity duration-500">
 
     <header class="flex justify-center items-center bg-cover bg-center bg-no-repeat bg-[url('../images/bg.jpg')]">
       <h1 class="drop-shadow mb-0 text-center">TailwindCSS Starter Desk</h1>
@@ -19,7 +28,7 @@
 
     <main class="container mx-auto px-4 py-10">
       <h1>Desk - starter template for the front-end on base TailwindCSS</h1>
-      <p><em>Revision 0.0.1 from 2022.05.12</em></p>
+      <p><em>Revision 0.0.2 from 2022.07.28</em></p>
       <hr class="mt-4 mb-8 border-zinc-700">
       <p>
         Starter uses npm command for front-end's works. On board: <a href="https://github.com/jonschlinkert/gulp-htmlmin">HTML-Minifier</a>, <a href="https://github.com/tailwindlabs/tailwindcss">TailwindCSS</a>, nesting and import suntax on base <a href="https://github.com/postcss/postcss">PostCSS</a> witch Autoprefixer and Nanocss plugins, <a href="https://github.com/rollup/rollup">Rollup</a> witch JSON and <a href="https://github.com/terser/html-minifier-terser">Terser</a> plufins. <a href="https://github.com/imagemin/imagemin">Imagemin</a>.
@@ -34,7 +43,8 @@
       <h2>Commands</h2>
       <h3 class="mb-2">Develop in browser </h3>
       <p class="mb-2">Run browser (default 'firefox'), watching files and live server reload.<br>
-      <em>You can open this in any browser: <code>http://localhost:3000</code></em></p>
+        <em>You can open this in any browser: <code>http://localhost:3000</code></em>
+      </p>
       <p><code>npm run dev</code></p>
       <h3 class="mb-2">Building files for production.</h3>
       <p><code>npm run build</code></p>
@@ -43,7 +53,7 @@
       <h3 class="mb-2">Settings</h3>
       <p>Use <code>package.json</code> and config files for change settings.</p>
       <h3 class="mb-2">Documentation</h3>
-      <ul class="flex space-x-6 text-white mb-4">
+      <ul class="flex flex-wrap space-x-6 text-white mb-4">
         <li><a class="under" target="_blank" href="https://tailwindcss.com/">TailwindCSS</a></li>
         <li><a class="under" target="_blank" href="https://github.com/postcss/postcss">PostCSS</a></li>
         <li><a class="under" target="_blank" href="https://github.com/postcss/postcss-cli">PostCSS CLI</a></li>
@@ -72,10 +82,7 @@
     </main>
 
     <footer class="container mx-auto flex flex-col items-center justify-center border-t border-t-zinc-700">
-      <p class="text-center mb-0">
-        &copy;&nbsp;2021
-        <a href="https://github.com/llcawc">llcawc</a>, all rights reserved. Made&nbsp;with&nbsp;<span style="color: #e60f0a;">&#10084;</span>&nbsp;for the&nbsp;best&nbsp;architecture.
-      </p>
+      <p class="text-center mb-0">&copy;&nbsp;<span class="year"></span><a href="https://github.com/llcawc">llcawc</a>, all rights reserved. Made&nbsp;with&nbsp;<span style="color: #e60f0a;">&#10084;</span>&nbsp;for the&nbsp;best&nbsp;architecture.</p>
     </footer>
   </div>
   <script src="assets/js/main.min.js"></script>

@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "*.postcss": "scss"
+  },
+  "emmet.includeLanguages": {
+    "postcss": "scss"
+  },
+  "vsicons.associations.files": [
+    { "icon": "postcss", "extensions": ["postcss"], "format": "svg" },
+  ]
+}

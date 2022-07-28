@@ -21,7 +21,7 @@ module.exports = {
     "ui": {
         "port": 3001
     },
-    "files": baseDir,
+    "files": distDir,
     "watchEvents": [
         "change"
     ],

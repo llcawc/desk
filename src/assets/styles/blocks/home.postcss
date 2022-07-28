@@ -1,5 +1,4 @@
-// custom.postcss
-
+// home.postcss
 
 :root {
   --font-family-sans: pasInter, sans-serif;
@@ -7,7 +6,7 @@
 }
 
 body {
-  @apply text-zinc-500 bg-zinc-900;
+  @apply relative text-zinc-500 bg-zinc-900;
   font-family: var(--font-family-sans);
 }
 
@@ -16,7 +15,10 @@ code {
   font-family: var(--font-family-mono);
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   @apply mb-4;
 }
 h1 {
@@ -39,4 +41,13 @@ a {
 
 .bukva {
   @apply indent-6 first-letter:font-bold first-letter:text-2xl first-letter:mr-[2px];
+}
+
+.loaded {
+  .loader {
+    opacity: 0;
+  }
+  .wrapper {
+    opacity: 1;
+  }
 }
