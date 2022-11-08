@@ -6,6 +6,6 @@
     "postcss": "scss"
   },
   "vsicons.associations.files": [
-    { "icon": "postcss", "extensions": ["postcss"], "format": "svg" },
+    { "icon": "PostCSS", "extensions": ["postcss"], "format": "svg" },
   ]
 }

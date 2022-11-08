@@ -28,7 +28,7 @@
 
     <main class="container mx-auto px-4 py-10">
       <h1>Desk - starter template for the front-end on base TailwindCSS</h1>
-      <p><em>Revision 0.0.2 from 2022.07.28</em></p>
+      <p><em>Revision 0.0.3 from 2022.11.08</em></p>
       <hr class="mt-4 mb-8 border-zinc-700">
       <p>
         Starter uses npm command for front-end's works. On board: <a href="https://github.com/jonschlinkert/gulp-htmlmin">HTML-Minifier</a>, <a href="https://github.com/tailwindlabs/tailwindcss">TailwindCSS</a>, nesting and import suntax on base <a href="https://github.com/postcss/postcss">PostCSS</a> witch Autoprefixer and Nanocss plugins, <a href="https://github.com/rollup/rollup">Rollup</a> witch JSON and <a href="https://github.com/terser/html-minifier-terser">Terser</a> plufins. <a href="https://github.com/imagemin/imagemin">Imagemin</a>.
@@ -37,6 +37,10 @@
       <h2>Getting started</h2>
       <p class="mb-2">Install the <a href="https://nodejs.org">node</a> and the <a href="https://www.npmjs.com/">npm</a> package manager, clone this repository in project folder and type this command into the wsl or mac terminal:</p>
       <p><code>npm install</code></p>
+      <p>If you see the upstream dependency conflict, retry this command with <code>--force</code>, or <code>--legacy-peer-deps</code></p>
+      <p><code>npm i --force</code></p>
+      <p>or</p>
+      <p><code>npm i --legacy-peer-deps</code></p>
       <p>Default directory:<br>
         - For development source files: <code>src</code>,<br>
         - For server and production: <code>dist</code> (will be created after run "dev" or "build")</p>
@@ -82,7 +86,7 @@
     </main>
 
     <footer class="container mx-auto flex flex-col items-center justify-center border-t border-t-zinc-700">
-      <p class="text-center mb-0">&copy;&nbsp;<span class="year"></span><a href="https://github.com/llcawc">llcawc</a>, all rights reserved. Made&nbsp;with&nbsp;<span style="color: #e60f0a;">&#10084;</span>&nbsp;for the&nbsp;best&nbsp;architecture.</p>
+      <p class="text-center mb-0">Copyright&copy;&nbsp;<span class="year"></span>&nbsp;<a href="https://github.com/llcawc">llcawc</a>, all rights reserved. Made&nbsp;with&nbsp;<span style="color: #e60f0a;">&#10084;</span>&nbsp;for the&nbsp;best&nbsp;architecture.</p>
     </footer>
   </div>
   <script src="assets/js/main.min.js"></script>
