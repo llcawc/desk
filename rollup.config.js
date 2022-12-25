@@ -1,13 +1,13 @@
 // rollup.config.js
 
-import { env } from 'process'
-import { terser } from 'rollup-plugin-terser'
-import json from '@rollup/plugin-json'
-import resolve from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
-import babel from '@rollup/plugin-babel'
+const {env} = require('node:process')
+const {terser} = require('rollup-plugin-terser')
+const json = require('@rollup/plugin-json')
+const resolve = require('@rollup/plugin-node-resolve')
+const commonjs = require('@rollup/plugin-commonjs')
+const babel = require('@rollup/plugin-babel')
 
-export default {
+module.exports = {
   input: 'src/assets/scripts/main.js',
   plugins: [resolve(), commonjs(), babel({ babelHelpers: 'bundled' }), json()],
 

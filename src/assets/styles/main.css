@@ -6,5 +6,4 @@
 @import 'tailwindcss/utilities';
 
 // user other custom styles
-@import 'blocks/home.postcss';
-@import 'blocks/loader.postcss';
+@import 'blocks/home';

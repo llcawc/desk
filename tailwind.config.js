@@ -1,4 +1,4 @@
-// tailwind config
+// tailwind.config.js
 
 const baseDir = 'src'
 

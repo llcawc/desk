@@ -1,16 +1,15 @@
 // main.js
 
-import { name, version } from '../../../package.json'
+import { name, version, date } from '../../../package.json'
 import data from './data.js'
 
-if (document.querySelector('.year')) {
-  document.querySelector('.year').innerHTML = new Date().getFullYear()
-}
+const revision = document.querySelector('#rev')
+revision ? revision.innerHTML = 'Revision ' + version +' from ' + date : console.log('Error: not finding "#rev" selector')
 
-window.onload = function () {
-  setTimeout(function () {
-    document.body.classList.add('loaded')
-  }, 200)
-}
+const year = document.querySelector('.year')
+year ? year.innerHTML = new Date().getFullYear() : console.log('Error: not finding ".year" selector')
 
-console.log(`Package name: "${name}". Version: ${version}`, '\ndata.js:JSON.stringify...', JSON.stringify(data), '\njs script is running ...', data.text)
+console.log(
+  `Package name: "${name}". Version: ${version}`,
+  '\nJSON.stringify:', JSON.stringify(data),
+  '\ndata text:', data.text)

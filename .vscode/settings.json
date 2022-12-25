@@ -1,11 +1,17 @@
 {
   "files.associations": {
-    "*.postcss": "scss"
+    "*.css": "scss",
+    "*.postcss": "scss",
   },
   "emmet.includeLanguages": {
-    "postcss": "scss"
+    "postcss": "scss",
+  },
+  "emmet.syntaxProfiles": {
+    "css": "css",
+    "htm": "html",
   },
   "vsicons.associations.files": [
     { "icon": "PostCSS", "extensions": ["postcss"], "format": "svg" },
-  ]
+    { "icon": "tailwind", "extensions": ["css"], "format": "svg" },
+  ],
 }
