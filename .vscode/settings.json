@@ -12,6 +12,6 @@
   },
   "vsicons.associations.files": [
     { "icon": "PostCSS", "extensions": ["postcss"], "format": "svg" },
-    { "icon": "tailwind", "extensions": ["css"], "format": "svg" },
+    { "icon": "css", "extensions": ["css"], "format": "svg" },
   ],
 }

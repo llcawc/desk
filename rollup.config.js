@@ -1,7 +1,6 @@
 // rollup.config.js
 
-const {env} = require('node:process')
-const {terser} = require('rollup-plugin-terser')
+const { env } = require('process')
 const json = require('@rollup/plugin-json')
 const resolve = require('@rollup/plugin-node-resolve')
 const commonjs = require('@rollup/plugin-commonjs')
@@ -16,6 +15,5 @@ module.exports = {
     format: 'iife',
     name: 'main',
     sourcemap: env.BUILD === 'production' ? false : true,
-    plugins: env.BUILD === 'production' ? [terser()] : false,
   },
 }

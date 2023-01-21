@@ -1,24 +1,12 @@
 {
   "name": "desk",
-  "version": "0.0.5",
-  "date": "2022.12.25",
+  "version": "23.01.21",
   "license": "ISC",
   "author": "pasmurno by llcawc",
   "homepage": "https://github.com/llcawc",
   "description": "tailwind starter template by pasmurno",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/llcawc/desk.git"
-  },
-  "keywords": [
-    "desk",
-    "tailwind",
-    "starter",
-    "template"
-  ],
-  "main": "",
   "scripts": {
-    "arc": "rsync -aP --delete --exclude=node_modules --exclude=Thumbs.db --exclude=.DS_Store ./ /mnt/d/Coding/breadboard/desk/",
+    "arc": "rsync -aRv --delete --exclude=node_modules . /mnt/d/Coding/github/desk/",
     "cleandist": "rimraf dist",
     "script": "rollup -c -w --silent",
     "css": "postcss src/assets/styles/*.css -d dist/assets/css --ext 'min.css'",
@@ -31,14 +19,15 @@
     "images": "imagemin src/assets/images --out-dir=dist/assets/images",
     "build": "run-s cleandist copy images build:* arc && echo 'CSS temporary file cleaned, production completed and archived'",
     "build:js": "rollup -c --environment BUILD:production",
+    "build:min": "terser dist/assets/js/main.min.js --compress --output dist/assets/js/main.min.js",
     "build:css": "postcss src/assets/styles/*.css -d dist/assets/css --ext 'min.css' --env 'production'",
     "build:htm": "html-minifier-terser --collapse-whitespace --remove-comments --input-dir src --file-ext html --output-dir dist"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.7",
+    "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "autoprefixer": "^10.4.13",
@@ -50,15 +39,15 @@
     "imagemin-cli": "^7.0.0",
     "nodemon": "^2.0.20",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.20",
+    "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "postcss-scss": "^4.0.6",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.1",
-    "rimraf": "^3.0.2",
-    "rollup": "^3.8.1",
-    "rollup-plugin-terser": "^7.0.2",
-    "tailwindcss": "^3.2.4"
+    "rimraf": "^4.1.1",
+    "rollup": "^3.10.1",
+    "tailwindcss": "^3.2.4",
+    "terser": "^5.16.1"
   }
 }

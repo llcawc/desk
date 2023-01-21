@@ -1,8 +1,8 @@
 # Desk - starter template for the front-end on base tailwind
 
-_Revision 0.0.5 from 2022.12.25_
+_Revision 23.01.21_
 
-Starter uses npm command for front-end's works. On board: [HTML-Minifier](https://github.com/terser/html-minifier-terser), [TailwindCSS](https://github.com/tailwindlabs/tailwindcss), nesting and import suntax on base [PostCSS](https://github.com/postcss/postcss) witch Autoprefixer and Nanocss plugins, [Rollup](https://github.com/rollup/rollup) witch JSON and [Terser](https://github.com/terser/terser) plufins. [Imagemin](https://github.com/imagemin/imagemin).
+Starter uses npm command for front-end's works. On board: [HTML-Minifier](https://github.com/terser/html-minifier-terser), [TailwindCSS](https://github.com/tailwindlabs/tailwindcss), nesting and import suntax on base [PostCSS](https://github.com/postcss/postcss) witch Autoprefixer and Nanocss plugins, [Rollup](https://github.com/rollup/rollup) witch JSON and [Terser](https://github.com/terser/terser). [Imagemin](https://github.com/imagemin/imagemin).
 
 ## Getting started
 
@@ -10,16 +10,6 @@ Install the [node](https://nodejs.org) and the [npm](https://www.npmjs.com/) pac
 
 ```
 npm install
-```
-If you see the upstream dependency conflict, retry this command with --force, or --legacy-peer-deps
-
-
-```
-npm i --force
-```
-or
-```
-npm i --legacy-peer-deps
 ```
 
 Default directory:
