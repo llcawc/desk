@@ -1,11 +1,9 @@
 // tailwind.config.js
 
-const baseDir = 'src'
-
 module.exports = {
   content: [
-    baseDir + '/**/*.{html,htm}',
-    baseDir + '/assets/script/**/*.j',
+    'src/**/*.{html,htm}',
+    'src/assets/script/**/*.js',
   ],
   theme: {
     extend: {
