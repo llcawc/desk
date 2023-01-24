@@ -1,6 +1,6 @@
 # Desk - starter template for the front-end on base tailwind
 
-_Revision 23.01.21_
+_Revision 23.01.24_
 
 Starter uses npm command for front-end's works. On board: [HTML-Minifier](https://github.com/terser/html-minifier-terser), [TailwindCSS](https://github.com/tailwindlabs/tailwindcss), nesting and import suntax on base [PostCSS](https://github.com/postcss/postcss) witch Autoprefixer and Nanocss plugins, [Rollup](https://github.com/rollup/rollup) witch JSON and [Terser](https://github.com/terser/terser). [Imagemin](https://github.com/imagemin/imagemin).
 

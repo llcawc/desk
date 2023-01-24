@@ -1,5 +1,4 @@
-// main.postcss
-// used postcss plagins for import, nesting and comments
+// main.css
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';

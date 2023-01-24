@@ -7,6 +7,6 @@ module.exports = (ctx) => ({
     'tailwindcss/nesting': {},
     tailwindcss: {},
     autoprefixer: {},
-    'postcss-csso': {},
+    'postcss-csso': ctx.env === 'production' ? {} : false,
   },
 })
