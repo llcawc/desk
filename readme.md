@@ -1,6 +1,6 @@
 # Desk - starter template for the front-end on base tailwind
 
-_Revision 23.01.24_
+_Revision 23.02.03_
 
 Starter uses the npm command to develop the front-end. The multi-page work is based on [11ty](https://www.11ty.dev/docs/) server with the template [nunjucks](https://mozilla.github.io/nunjucks/). CSS framework is [TailwindCSS](https://github.com/tailwindlabs/tailwindcss), using nesting and import syntax with Autoprefixer and Nanocss plugins on base [PostCSS](https://github.com/postcss/postcss) engine. To compile and minimize JS, this is using [Rollup](https://github.com/rollup/rollup) with plugins and [Terser](https://github.com/terser/terser). Plugin [Imagemin](https://github.com/imagemin/imagemin) creates images with cleaning and resizing.
 
@@ -40,4 +40,4 @@ Use `package.json` and config files for change settings.
 
 ----
 
-Copyright&copy;&nbsp;2022 [llcawc](https://github.com/llcawc), all rights reserved. Made&nbsp;with&nbsp;<span style="color: #e60f0a;">&#10084;</span>&nbsp;for&nbsp;the&nbsp;best&nbsp;architecture.
+Copyright &copy;2023 [llcawc](https://github.com/llcawc), all rights reserved. Made&nbsp;with&nbsp;<span style="color: #e60f0a;">&#10084;</span>&nbsp;for&nbsp;the&nbsp;best&nbsp;architecture.
