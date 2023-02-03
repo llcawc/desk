@@ -6,35 +6,48 @@
     --font-family-mono: pasJetBrainsMono, monospace;
   }
   body {
-    @apply relative text-zinc-500 bg-zinc-900;
+    @apply relative h-screen w-screen min-w-[300px] overflow-x-hidden bg-zinc-900 text-zinc-500;
     font-family: var(--font-family-sans);
   }
-  code, pre {
+  code {
     @apply text-red-400 text-opacity-90;
     font-family: var(--font-family-mono);
+  }
+  pre {
+    @apply mt-2 mb-6 rounded bg-zinc-800 bg-opacity-30 p-2;
   }
   h1,
   h2,
   h3,
-  p {
+  p,
+  ul {
     @apply mb-4;
   }
   h1 {
-    @apply text-white text-4xl font-semibold;
+    @apply text-4xl font-semibold text-white;
   }
   h2 {
-    @apply text-white text-2xl font-medium;
+    @apply text-2xl font-medium text-white;
   }
   h3 {
     @apply text-xl font-medium;
   }
   a {
-    @apply font-medium text-red-600 hover:text-red-800 transition-all focus-visible:outline-red-600 focus-visible:outline-dotted focus-visible:outline-4;
+    @apply font-medium text-red-600 transition-colors hover:text-red-800 focus-visible:outline-dotted focus-visible:outline-4 focus-visible:outline-red-600;
   }
 }
 .under {
-  @apply text-white font-medium no-underline hover:text-white hover:underline hover:underline-offset-4 hover:decoration-4 decoration-red-500;
+  @apply font-medium text-zinc-300 no-underline decoration-red-500 hover:text-white hover:underline hover:decoration-4 hover:underline-offset-4;
 }
-.bukva {
-  @apply indent-6 first-letter:font-bold first-letter:text-2xl first-letter:mr-[2px];
+.active {
+  @apply underline decoration-red-500 decoration-4 underline-offset-4;
+}
+article p {
+  @apply indent-6 first-letter:mr-[2px] first-letter:text-2xl first-letter:font-bold;
+}
+article blockquote {
+  @apply relative m-4 before:absolute before:top-0 before:-left-6 before:font-serif before:text-3xl before:font-bold before:text-red-700 before:content-['i'] md:mx-24 xl:mx-40;
+  p {
+    @apply indent-0 first-letter:m-0 first-letter:text-base first-letter:font-normal;
+  }
 }

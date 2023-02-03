@@ -1,0 +1,66 @@
+---
+layout: default
+title: Home
+header: Starter template Desk
+---
+
+<main class="container mx-auto px-4 py-10">
+  <section>
+    <h1>Desk - starter template for the front-end on base 11ty and TailwindCSS</h1>
+    <p><em id="rev"></em></p>
+    <hr class="mt-4 mb-8 border-zinc-700" />
+    <p>
+      Starter uses the npm command to develop the front-end. The multi-page work is based on
+      <a href="https://www.11ty.dev/docs/">11ty</a> server with the template
+      <a href="https://mozilla.github.io/nunjucks/">nunjucks</a>. CSS framework is
+      <a href="https://github.com/tailwindlabs/tailwindcss">TailwindCSS</a>, using nesting and import syntax with
+      Autoprefixer and Nanocss plugins on base <a href="https://github.com/postcss/postcss">PostCSS</a> engine. To
+      compile and minimize JS, this is using <a href="https://github.com/rollup/rollup">Rollup</a> with plugins and
+      <a href="https://github.com/terser/terser">Terser</a>. Plugin
+      <a href="https://github.com/imagemin/imagemin">Imagemin</a> creates images with cleaning and resizing.
+    </p>
+  </section>
+  <section>
+    <hr class="mt-4 mb-8 border-zinc-700" />
+    <h2>Getting started</h2>
+    <p>
+      Install the <a href="https://nodejs.org">node</a> and the <a href="https://www.npmjs.com/">npm</a> package
+      manager, clone this repository in project folder and type this command into the wsl or mac terminal:
+    </p>
+    <pre><code>npm install</code></pre>
+    <h3>Default directory:</h3>
+    <p>
+      - For development source files: <code>src</code>,<br />
+      - For server and production: <code>dist</code> (will be created after run "dev" or "build")
+    </p>
+    <h2>Commands</h2>
+    <h3>Develop in browser</h3>
+    <p>
+      Run browser (default 'firefox'), watching files and live server reload.<br />
+      <em>You can open this in any browser: <code>http://localhost:3000</code></em>
+    </p>
+    <pre><code>npm run dev</code></pre>
+    <h3>Building files for production.</h3>
+    <pre><code>npm run build</code></pre>
+    <h3>Run server (if "dist" exist :) in browser.</h3>
+    <pre><code>npm run serve</code></pre>
+    <h3>Settings</h3>
+    <p>Use <code>package.json</code> and config files for change settings.</p>
+  </section>
+  <section>
+    <hr class="my-4 border-zinc-700" />
+    <h2>Documentation</h2>
+    <ul class="flex flex-wrap gap-x-4 text-white">
+      <li><a class="under" target="_blank" href="https://www.11ty.dev/">11ty</a></li>
+      <li><a class="under" target="_blank" href="https://mozilla.github.io/nunjucks/">Nunjucks</a></li>
+      <li><a class="under" target="_blank" href="https://tailwindcss.com/">TailwindCSS</a></li>
+      <li><a class="under" target="_blank" href="https://github.com/postcss/postcss">PostCSS</a></li>
+      <li><a class="under" target="_blank" href="https://github.com/postcss/postcss-cli">PostCSS CLI</a></li>
+      <li><a class="under" target="_blank" href="https://github.com/terser/html-minifier-terser">HTML-Minifier</a></li>
+      <li><a class="under" target="_blank" href="https://github.com/rollup/rollup">Rollup</a></li>
+      <li><a class="under" target="_blank" href="https://github.com/terser/terser">Terser</a></li>
+      <li><a class="under" target="_blank" href="https://browsersync.io/">Browsersync</a></li>
+      <li><a class="under" target="_blank" href="https://github.com/imagemin/imagemin">Imagemin</a></li>
+    </ul>
+  </section>
+</main>

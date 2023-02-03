@@ -1,15 +1,14 @@
 // main.js
 
-import { name, version } from '../../../package.json'
 import data from './data.js'
 
 const revision = document.querySelector('#rev')
-revision ? revision.innerHTML = 'Revision ' + version : console.log('Error: not finding "#rev" selector')
+revision ? revision.innerHTML = 'Revision ' + data.version : console.log('Error: not finding "#rev" selector')
 
 const year = document.querySelector('.year')
 year ? year.innerHTML = new Date().getFullYear() : console.log('Error: not finding ".year" selector')
 
 console.log(
-  `Package name: "${name}". Version: ${version}`,
-  '\nJSON.stringify:', JSON.stringify(data),
-  '\ndata text:', data.text)
+  `Package name: "${data.name}". Version: ${data.version}`,
+  `\nPackage description: "${data.description}".`,
+  '\nJSON.stringify:', JSON.stringify(data))

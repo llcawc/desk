@@ -2,7 +2,7 @@
 
 _Revision 23.01.24_
 
-Starter uses npm command for front-end's works. On board: [HTML-Minifier](https://github.com/terser/html-minifier-terser), [TailwindCSS](https://github.com/tailwindlabs/tailwindcss), nesting and import suntax on base [PostCSS](https://github.com/postcss/postcss) witch Autoprefixer and Nanocss plugins, [Rollup](https://github.com/rollup/rollup) witch JSON and [Terser](https://github.com/terser/terser). [Imagemin](https://github.com/imagemin/imagemin).
+Starter uses the npm command to develop the front-end. The multi-page work is based on [11ty](https://www.11ty.dev/docs/) server with the template [nunjucks](https://mozilla.github.io/nunjucks/). CSS framework is [TailwindCSS](https://github.com/tailwindlabs/tailwindcss), using nesting and import syntax with Autoprefixer and Nanocss plugins on base [PostCSS](https://github.com/postcss/postcss) engine. To compile and minimize JS, this is using [Rollup](https://github.com/rollup/rollup) with plugins and [Terser](https://github.com/terser/terser). Plugin [Imagemin](https://github.com/imagemin/imagemin) creates images with cleaning and resizing.
 
 ## Getting started
 

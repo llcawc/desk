@@ -1,17 +1,18 @@
 {
   "files.associations": {
     "*.css": "scss",
-    "*.postcss": "scss",
-  },
-  "emmet.includeLanguages": {
-    "postcss": "scss",
   },
   "emmet.syntaxProfiles": {
     "css": "css",
     "htm": "html",
   },
-  "vsicons.associations.files": [
-    { "icon": "postcss", "extensions": ["postcss"], "format": "svg" },
-    { "icon": "tailwind", "extensions": ["css"], "format": "svg" },
-  ],
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

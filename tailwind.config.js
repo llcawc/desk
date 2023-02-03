@@ -2,7 +2,7 @@
 
 module.exports = {
   content: [
-    'src/**/*.{html,htm}',
+    'src/**/*.{html,htm,njk}',
     'src/assets/script/**/*.js',
   ],
   theme: {
