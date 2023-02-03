@@ -1,0 +1,13 @@
+<header class="flex min-h-[10rem] flex-col items-center justify-center bg-[url('/assets/images/bg.jpg')] bg-cover bg-center bg-no-repeat p-4">
+  <h1 class="text-center drop-shadow">{{ header }}</h1>
+  <nav>
+    <ul class="mb-0 flex gap-4 drop-shadow">
+      <li>
+        <a class="{% if title === 'Home' %} active{% endif %} font-bold uppercase text-white no-underline transition-colors hover:text-zinc-200" href="/">Home</a>
+      </li>
+      <li>
+        <a class="{% if title === 'Article' %} active{% endif %} font-bold uppercase text-white no-underline transition-colors hover:text-zinc-200" href="/post/{{ post.name[1] | slug }}/">Article</a>
+      </li>
+    </ul>
+  </nav>
+</header>
