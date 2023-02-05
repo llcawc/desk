@@ -1,15 +1,11 @@
 {
   "files.associations": {
-    "*.css": "scss",
+    "*.css": "tailwindcss",
   },
   "emmet.syntaxProfiles": {
     "css": "css",
-    "htm": "html",
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {

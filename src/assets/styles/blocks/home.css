@@ -1,4 +1,4 @@
-// home.css
+/* home.css */
 
 @layer base {
   :root {
@@ -45,9 +45,9 @@
 article p {
   @apply indent-6 first-letter:mr-[2px] first-letter:text-2xl first-letter:font-bold;
 }
-article blockquote {
+blockquote {
   @apply relative m-4 before:absolute before:top-0 before:-left-6 before:font-serif before:text-3xl before:font-bold before:text-red-700 before:content-['i'] md:mx-24 xl:mx-40;
-  p {
-    @apply indent-0 first-letter:m-0 first-letter:text-base first-letter:font-normal;
-  }
+}
+blockquote p {
+  @apply indent-0 first-letter:m-0 first-letter:text-base first-letter:font-normal;
 }

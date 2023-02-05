@@ -1,8 +1,8 @@
-// main.css
+/* main.css */
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-// user other custom styles
+/* user other custom styles */
 @import 'blocks/home';
