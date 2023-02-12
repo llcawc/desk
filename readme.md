@@ -18,7 +18,7 @@ Default directory:
 
 ## Commands
 
-### Develop in browser (default 'firefox'), watching files and live server reload.
+### Develop in browser, watching files and live server reload.
 _You can open this in any browser: `http://localhost:3000`_
 ```
 npm run dev
