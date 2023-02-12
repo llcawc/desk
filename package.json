@@ -17,7 +17,7 @@
     "dev:css": "nodemon --ext html,pug,css,js -w src -x 'npm run css' --ignore dist",
     "dev": "npm-run-all clean copy -p dev:* serve",
     "serve": "browser-sync start --config bs-config.js",
-    "build": "run-s clean copy images build:* && echo 'CSS temporary file cleaned, production completed and archived'",
+    "build": "run-s clean copy images build:* arch && echo 'CSS temporary file cleaned, production completed and archived'",
     "build:js": "rollup -c --environment BUILD:production",
     "build:min": "terser dist/assets/js/main.min.js --compress --output dist/assets/js/main.min.js",
     "build:css": "postcss src/assets/styles/*.css -d dist/assets/css --ext 'min.css' --env 'production'",
@@ -41,12 +41,12 @@
     "postcss-cli": "^10.1.0",
     "postcss-csso": "^6.0.1",
     "postcss-import": "^15.1.0",
-    "prettier": "^2.8.3",
+    "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.2",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
-    "rollup": "^3.14.0",
-    "tailwindcss": "^3.2.4",
+    "rollup": "^3.15.0",
+    "tailwindcss": "^3.2.6",
     "terser": "^5.16.3"
   }
 }
