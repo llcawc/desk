@@ -1,10 +1,7 @@
 // tailwind.config.js
 
 module.exports = {
-  content: [
-    'src/**/*.{html,htm,pug}',
-    'src/assets/script/**/*.js',
-  ],
+  content: ['src/**/*.{html,htm,pug}', 'src/assets/script/**/*.js'],
   theme: {
     extend: {
       transitionDuration: {

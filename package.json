@@ -24,14 +24,14 @@
     "build:htm": "npx pug src/pages --out dist"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.12",
+    "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "autoprefixer": "^10.4.13",
-    "browser-sync": "^2.27.11",
+    "browser-sync": "^2.27.12",
     "copyfiles": "^2.4.1",
     "imagemin": "^8.0.1",
     "imagemin-cli": "^7.0.0",
@@ -42,11 +42,11 @@
     "postcss-csso": "^6.0.1",
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.4",
-    "prettier-plugin-tailwindcss": "^0.2.2",
+    "prettier-plugin-tailwindcss": "^0.2.3",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
-    "rollup": "^3.15.0",
-    "tailwindcss": "^3.2.6",
-    "terser": "^5.16.3"
+    "rollup": "^3.17.3",
+    "tailwindcss": "^3.2.7",
+    "terser": "^5.16.5"
   }
 }
