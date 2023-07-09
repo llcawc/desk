@@ -1,8 +1,8 @@
 # Desk - starter template for the front-end on base tailwind
 
-_Revision 23.07.07_
+_Version 0.0.1 date 23.07.07_
 
-Starter uses the npm command to develop the front-end. The multi-page work is based on the [PUG](https://github.com/pugjs/pug) template. CSS framework is [TailwindCSS](https://github.com/tailwindlabs/tailwindcss), using nesting and import syntax with Autoprefixer and Nanocss plugins on base [PostCSS](https://github.com/postcss/postcss) engine. To compile and minimize JS, this is using [Rollup](https://github.com/rollup/rollup) with plugins and [Terser](https://github.com/terser/terser). Plugin [Imagemin](https://github.com/imagemin/imagemin) creates images with cleaning and resizing.
+Starter uses npm command for front-end's works. On board: [HTML-Minifier](https://github.com/terser/html-minifier-terser), [TailwindCSS](https://github.com/tailwindlabs/tailwindcss), nesting and import suntax on base [PostCSS](https://github.com/postcss/postcss) witch Autoprefixer and Nanocss plugins, [Rollup](https://github.com/rollup/rollup) witch JSON and [Terser](https://github.com/terser/terser). [Imagemin](https://github.com/imagemin/imagemin).
 
 ## Getting started
 
@@ -18,7 +18,7 @@ Default directory:
 
 ## Commands
 
-### Develop in browser, watching files and live server reload.
+### Develop in browser (default 'firefox'), watching files and live server reload.
 _You can open this in any browser: `http://localhost:3000`_
 ```
 npm run dev
@@ -40,4 +40,4 @@ Use `package.json` and config files for change settings.
 
 ----
 
-Copyright &copy;2023 [llcawc](https://github.com/llcawc), all rights reserved. Made&nbsp;with&nbsp;<span style="color: #e60f0a;">&#10084;</span>&nbsp;for&nbsp;the&nbsp;best&nbsp;architecture.
+Copyright&copy;&nbsp;2022 [llcawc](https://github.com/llcawc), all rights reserved. Made&nbsp;with&nbsp;<span style="color: #e60f0a;">&#10084;</span>&nbsp;for&nbsp;the&nbsp;best&nbsp;architecture.

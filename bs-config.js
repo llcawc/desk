@@ -9,8 +9,8 @@
  */
 
 module.exports = {
-  server: 'dist',
-  notify: false,
-  open: false,
-  watch: true,
-}
+  "server": 'dist',
+  "notify": false,
+  "open": false,
+  "watch": true,
+};
