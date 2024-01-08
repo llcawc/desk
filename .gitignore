@@ -3,7 +3,7 @@
 /.yarn/
 /dist/
 /node_modules/
-/**/package-lock.json
+/package-lock.json
 /.pnp.cjs
 /**/yarn.lock
 /.pnp.loader.mjs
