@@ -5,4 +5,7 @@
 @import 'tailwindcss/utilities';
 
 /* user other custom styles */
-@import 'blocks/home';
+@import 'blocks/animate.css';
+@import 'blocks/common.css';
+@import 'blocks/waves.css';
+@import 'blocks/buttons.css';

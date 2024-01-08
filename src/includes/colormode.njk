@@ -1,0 +1,15 @@
+{# color mode switcher #}
+
+<div class="absolute md:top-12 md:right-16 top-8 right-8 z-10">
+  <button class="color-mode-switcher">
+    <span class="*:w-6 *:h-6 *:fill-gray-100 hover:*:fill-accent *:transition" data-mode="light" title="Ligt color theme" aria-label="Светлая тема">
+      {% include "../assets/images/icons/sun-fill.svg" %}
+    </span>
+    <span class="*:w-6 *:h-6 *:fill-gray-100 hover:*:fill-accent *:transition hidden" data-mode="auto" title="System color theme" aria-label="Тема системы">
+      {% include "../assets/images/icons/front.svg" %}
+    </span>
+    <span class="*:w-6 *:h-6 *:fill-gray-100 hover:*:fill-accent *:transition hidden" data-mode="dark" title="Dark color theme" aria-label="Тёмная тема">
+      {% include "../assets/images/icons/moon-stars-fill.svg" %}
+    </span>
+  </button>
+</div>
