@@ -4,10 +4,6 @@
 {% set bgImg = "bg-[url('/assets/images/world.jpg')]" %}
 {# --- #}
 
-{% block header %}
-  <header></header>
-{% endblock %}
-
 {% block main %}
   <main class="absolute -z-[1] top-0 left-0 flex items-center justify-center h-screen w-screen overflow-hidden {{bgImg}} bg-cover bg-[50%]">
     <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-black/80 via-black/95 to-black/80"></div>
@@ -25,8 +21,4 @@
       </div>
     </div>
   </main>
-{% endblock %}
-
-{% block footer %}
-  <footer></footer>
 {% endblock %}
