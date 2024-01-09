@@ -1,16 +1,16 @@
 // colormode.js
 // the script for the color theme switch
 
-const getStoredTheme = () => localStorage.getItem('theme') // считать тему из локального хранилища
-const setStoredTheme = (theme) => localStorage.setItem('theme', theme) // записать тему в локальное хранилище
-const removeStoredTheme = () => localStorage.removeItem('theme') // убрать ключ в локальном хранилище
-const buttonSwicher = document.querySelector('.color-mode-switcher') // взять узел переключателя
+const getStoredTheme = () => localStorage.getItem('theme') // take a theme name from the local storage
+const setStoredTheme = (theme) => localStorage.setItem('theme', theme) // write the name of the theme to the local storage
+const removeStoredTheme = () => localStorage.removeItem('theme') // remove the key in the local storage
+const buttonSwicher = document.querySelector('.color-mode-switcher') // take the switch node
 if (!buttonSwicher) {
-  throw new Error('Ошибка! не найден переключатель цветовых тем с классом .color-mode-switcher')
+  throw new Error('!!! The color theme switch with the .color-mode-switcher class was not found !!!')
 }
-let [light, auto, dark] = buttonSwicher.children // взять подузлы переключателя
+let [light, auto, dark] = buttonSwicher.children // take the switch subnodes
 
-// Получить текущую цветовую тему
+// Get the current or preferred color theme
 const getPreferredTheme = () => {
   const storedTheme = getStoredTheme()
   if (storedTheme === 'light' || storedTheme === 'dark') {
@@ -19,7 +19,7 @@ const getPreferredTheme = () => {
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 }
 
-// Установить класс 'dark' тега 'html' или убрать его нафиг
+// Install the 'dark' class of the 'html' tag or remove it for fuck's sake
 const setTheme = (theme) => {
   if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark')
@@ -28,9 +28,7 @@ const setTheme = (theme) => {
   }
 }
 
-setTheme(getPreferredTheme())
-
-// Отобразить переключение на пульте управления цветовыми темами
+// Show switching on the color themes control panel
 function showThemeIcon(theme) {
   switch (theme) {
     case 'light':
@@ -50,33 +48,36 @@ function showThemeIcon(theme) {
   }
 }
 
-// Следить за сменой темы в системе
+// Keep track of the topic change in the system
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
   let theme = getPreferredTheme()
   showThemeIcon(theme)
   setTheme(theme)
 })
 
-// Установить обработчик переключателя цветовых тем
+// Install a color theme switch handler
 window.addEventListener('DOMContentLoaded', () => {
-  // сначала установим правильную иконку цветовой темы
   let usedTheme = getPreferredTheme()
+  // and let's install the theme at launch right away
+  setTheme(usedTheme)
+  // first, set the correct color theme icon
   showThemeIcon(usedTheme)
-  // и запустим обработчик новых переключений
+  // and we will launch the handler for new switches
   buttonSwicher.addEventListener('click', (ev) => {
     ev.preventDefault()
     let currentMode = ''
     let theme = ''
+    // get the attribute name of a non-hidden button
     ;[...buttonSwicher.children].forEach((el) => {
       if (!el.classList.contains('hidden')) {
         currentMode = el.attributes['data-mode'].value
       }
     })
+    // circular color mode change button and set new color mode
     switch (currentMode) {
       case 'light':
         showThemeIcon('dark')
         theme = 'dark'
-        setStoredTheme()
         break
       case 'auto':
         showThemeIcon('light')
@@ -85,12 +86,14 @@ window.addEventListener('DOMContentLoaded', () => {
       case 'dark':
         showThemeIcon('auto')
         theme = 'auto'
-        removeStoredTheme()
-        setTheme(getPreferredTheme())
     }
     if (theme !== 'auto') {
       setStoredTheme(theme)
       setTheme(theme)
+    } else {
+      // if choose the system theme, the color mode takes from window.matchMedia
+      removeStoredTheme()
+      setTheme(getPreferredTheme())
     }
   })
 })
